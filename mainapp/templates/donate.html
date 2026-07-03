@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - HopeHands Foundation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-white text-[#333333] font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header Navigation Bar -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-2 font-bold text-gray-800 tracking-tight">
+                <span class="inline-block w-3 h-5 bg-black rounded-sm"></span>
+                <span>HopeHands Foundation</span>
+            </div>
+            
+            <!-- Menu Links -->
+            <nav class="flex items-center gap-8 font-medium text-sm text-gray-600">
+                <a href="{% url 'home' %}" class="hover:text-black transition-colors">Home</a>
+                <a href="{% url 'about' %}" class="hover:text-black transition-colors">About Us</a>
+                <a href="{% url 'causes' %}" class="hover:text-black transition-colors">Causes</a>
+                <a href="{% url 'donate' %}" class="hover:text-black transition-colors">Donate</a>
+                <a href="{% url 'contact' %}" class="hover:text-black transition-colors">Contact</a>
+                <a href="{% url 'donate' %}" class="ml-2 bg-[#1d3a8a] text-white px-5 py-2.5 rounded text-xs font-bold tracking-wide hover:bg-[#1e40af] transition-colors">Donate Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container Section -->
+    <main class="max-w-6xl mx-auto px-6 py-12 flex-grow w-full">
+        
+        <!-- Header Text Intro Group -->
+        <div class="max-w-4xl mb-10">
+            <h1 class="text-3xl font-bold tracking-tight text-gray-900 mb-4">Make a Difference Today</h1>
+            <p class="text-gray-600 text-sm leading-relaxed">
+                Your generous donation will help us continue our mission to support communities in need. Choose an amount below or enter a custom amount to make a secure donation.
+            </p>
+        </div>
+
+        <!-- Donation Form -->
+        <form class="max-w-4xl">
+            
+            <!-- Donor Information Details -->
+            <div class="mb-10">
+                <h2 class="text-lg font-bold text-gray-900 mb-4">Donor Information</h2>
+                <div class="space-y-4 max-w-lg">
+                    <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 shadow-inner bg-[#fcfcfc] focus:outline-none focus:border-gray-400 text-sm placeholder-gray-400">
+                    <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-lg border border-gray-300 shadow-inner bg-[#fcfcfc] focus:outline-none focus:border-gray-400 text-sm placeholder-gray-400">
+                    <input type="text" placeholder="Address" class="w-full px-4 py-3 rounded-lg border border-gray-300 shadow-inner bg-[#fcfcfc] focus:outline-none focus:border-gray-400 text-sm placeholder-gray-400">
+                </div>
+            </div>
+
+            <!-- Amount & Select Section Layout Container -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end gap-8">
+                
+                <!-- Left Hand Interactive Controls -->
+                <div class="space-y-6 w-full md:max-w-md">
+                    <div>
+                        <h2 class="text-lg font-bold text-gray-900 mb-4">Select Donation Amount</h2>
+                        <!-- Grid Selection Pill Group -->
+                        <div class="grid grid-cols-2 gap-3 max-w-xs">
+                            <button type="button" class="py-2 px-4 rounded-lg bg-[#e2e8f0] border border-gray-300 text-xs font-bold text-gray-800 shadow-sm transition-all hover:bg-gray-200">₹500</button>
+                            <button type="button" class="py-2 px-4 rounded-lg bg-[#e2e8f0] border border-gray-300 text-xs font-bold text-gray-800 shadow-sm transition-all hover:bg-gray-200">₹1000</button>
+                            <button type="button" class="py-2 px-4 rounded-lg bg-[#e2e8f0] border border-gray-300 text-xs font-bold text-gray-800 shadow-sm transition-all hover:bg-gray-200">₹2000</button>
+                            <button type="button" class="py-2 px-4 rounded-lg bg-[#e2e8f0] border border-gray-300 text-xs font-bold text-gray-800 shadow-sm transition-all hover:bg-gray-200">Custom</button>
+                        </div>
+                    </div>
+
+                    <!-- Dropdown Component Box -->
+                    <div class="relative max-w-xs">
+                        <select class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white shadow-sm focus:outline-none appearance-none text-xs font-medium text-gray-700 pr-10">
+                            <option>Select a Cause</option>
+                            <option>Healthcare for Children</option>
+                            <option>Education for All</option>
+                            <option>Poverty Relief</option>
+                            <option>Environmental Sustainability</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex flex-col justify-center px-3 text-gray-400 border-l border-gray-200 my-2">
+                            <i class="fa-solid fa-chevron-up text-[9px] mb-[2px]"></i>
+                            <i class="fa-solid fa-chevron-down text-[9px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hand Confirmation Call-to-Action Grid -->
+                <div class="text-center md:text-right space-y-3 shrink-0">
+                    <button type="submit" class="w-full md:w-auto bg-[#1d3a8a] text-white px-8 py-3 rounded-lg font-bold text-sm tracking-wide shadow hover:bg-[#1e40af] transition-colors">
+                        Donate Securely
+                    </button>
+                    <p class="text-xs text-gray-400">
+                        Your donation is safe with us. We use secure payment processing.
+                    </p>
+                </div>
+            </div>
+
+        </form>
+    </main>
+
+    <!-- Global Footer Alignment Structure -->
+    <footer class="bg-[#eaeaea] text-gray-500 text-xs py-8 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
+            <!-- Secondary Navigation Links Link Feed -->
+            <div class="flex justify-center gap-12 text-gray-600 font-medium">
+                <a href="#" class="hover:underline">About Us</a>
+                <a href="#" class="hover:underline">Contact</a>
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+            </div>
+            
+            <!-- Social Icons Vector Layout Links -->
+            <div class="flex justify-center gap-5 text-base text-gray-500">
+                <a href="#" class="hover:text-gray-800 transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-gray-800 transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-gray-800 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            
+            <!-- Copyright Dynamic Footnote Block -->
+            <div class="text-[11px] text-gray-400 pt-2">
+                &copy; 2024 HopeHands Foundation. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

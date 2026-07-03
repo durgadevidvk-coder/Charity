@@ -1,0 +1,256 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | HopeHands Foundation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- 1. NAVIGATION HEADER -->
+    <nav class="bg-white border-b border-gray-100 py-4 px-6 md:px-12 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center space-x-2 font-bold text-xl text-slate-900 tracking-tight">
+            <span class="text-blue-800 font-extrabold">■</span> 
+            <span>HopeHands Foundation</span>
+        </div>
+        <div class="hidden md:flex space-x-8 items-center text-gray-600 font-medium text-sm">
+            <a href="{% url 'home' %}" class="hover:text-slate-950 transition">Home</a>
+            <a href="{% url 'about' %}" class="text-slate-900 font-semibold border-b-2 border-slate-900 pb-1">About Us</a>
+            <a href="{% url 'causes' %}" class="hover:text-slate-950 transition">Causes</a>
+            <a href="{% url 'donate' %}" class="hover:text-slate-950 transition">Donate</a>
+            <a href="{% url 'contact' %}" class="hover:text-slate-950 transition">Contact</a>
+            <a href="{% url 'donate' %}" class="bg-blue-900 text-white px-5 py-2.5 rounded font-semibold hover:bg-blue-800 transition">Donate Now</a>
+        </div>
+    </nav>
+
+    <!-- 2. ABOUT US & OUR STORY SECTION (image_5.png / image_6.png) -->
+    <main class="flex-grow">
+        <section class="max-w-5xl mx-auto text-center pt-12 px-6">
+            <h1 class="text-3xl font-bold text-gray-900 mb-2">About Us</h1>
+            <h2 class="text-xs font-bold uppercase tracking-widest  mb-6">Our Story</h2>
+            
+            <p class="text-gray-600 text-sm md:text-base leading-relaxed max-w-4xl mx-auto mb-12">
+                HopeHands Foundation was established in 2010 by Sarah Johnson and David Lee, two individuals driven by a shared vision of creatingNormally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.</p>
+        </section>
+    </main>
+
+<!-- Hero Image Section -->
+<section class="w-full bg-white py-10">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class=" rounded-xl p-6 md:p-10 shadow-sm flex justify-center items-center">
+
+            <img src="{% static 'images/hero_about.png' %}"
+                 alt="HopeHands Hero Image"
+                 class="w-full max-h-[700px] object-cover rounded-xl shadow-md">
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- Vision & Mission Text Block -->
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <h3 class="text-lg font-bold text-gray-900 tracking-wide">Vision & Mission</h3>
+            
+            <p class="text-gray-600 text-sm md:text-base leading-relaxed text-justify md:text-center font-normal px-2">
+                Our vision is to build a world where every individual has the opportunity to thrive, free from poverty and injustice. We strive to empower communities, ensuring access to essential resourcesNormally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.</p>
+        </div>
+        
+
+
+
+        
+         <!-- MAIN CONTENT CONTAINER -->
+    <main class="max-w-6xl mx-auto px-6 py-16 flex-grow">
+        
+        <!-- OUR VALUES SECTION -->
+<section class="mb-20">
+
+    <h2 class="text-3xl font-semibold text-center text-gray-900 mb-10">
+        Our Values
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Card 1 -->
+        <div class="bg-[#f7f7f7] border border-gray-300 rounded-xl p-6 shadow-sm">
+
+            <div class="text-2xl text-blue-700 mb-4">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                Compassion
+            </h3>
+
+            <p class="text-sm text-gray-600 leading-relaxed">
+                We approach our work with empathy <br> and understanding, recognizing the <br> inherent dignity of every person.
+            </p>
+
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="bg-[#f7f7f7] border border-gray-300 rounded-xl p-6 shadow-sm">
+
+            <div class="text-2xl text-green-700 mb-4">
+                <i class="fa-solid fa-handshake"></i>
+            </div>
+
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                collabration
+            </h3>
+
+            <p class="text-sm text-gray-600 leading-relaxed">
+                We believe in the power of partnerships<br> and collective action to achieve lasting<br> change.
+            </p>
+
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="bg-[#f7f7f7] border border-gray-300 rounded-xl p-6 shadow-sm">
+
+            <div class="text-2xl text-purple-700 mb-4">
+                <i class="fa-solid fa-users"></i>
+            </div>
+
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">
+            Integrity
+            </h3>
+
+            <p class="text-sm text-gray-600 leading-relaxed">
+                We uphold the highest standards of <br>honesty and ethical conduct in all our<br> endeavors
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        
+
+       <!-- OUR TEAM SECTION -->
+<section class="mb-10">
+
+    <h2 class="text-3xl font-semibold text-center text-gray-900 mb-12">
+        Our Team
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
+
+        <!-- Team Member 1 -->
+        <div class="text-center max-w-[240px]">
+
+            <div class="w-[180px] h-[180px] rounded-full overflow-hidden mb-5 bg-[#e5c3b2] mx-auto">
+
+                <img src="{% static 'images/Teams1.png' %}"
+                     alt="Sarah Johnson"
+                     class="w-full h-full object-cover">
+
+            </div>
+
+            <h3 class="text-md font-semibold text-gray-900 mb-1">
+                Sarah Johnson
+            </h3>
+
+            <p class="text-xs text-gray-500 leading-tight">
+                Founder & Director
+            </p>
+
+        </div>
+
+
+        <!-- Team Member 2 -->
+        <div class="text-center max-w-[240px]">
+
+            <div class="w-[180px] h-[180px] rounded-full overflow-hidden mb-5 bg-[#e5c3b2] mx-auto">
+
+                <img src="{% static 'images/Teams2.png' %}"
+                     alt="David Miller"
+                     class="w-full h-full object-cover">
+
+            </div>
+
+            <h3 class="text-md font-semibold text-gray-900 mb-1">
+                David Miller
+            </h3>
+
+            <p class="text-xs text-gray-500 leading-tight">
+                Volunteer Coordinator
+            </p>
+
+        </div>
+
+
+        <!-- Team Member 3 -->
+        <div class="text-center max-w-[240px]">
+
+            <div class="w-[180px] h-[180px] rounded-full overflow-hidden mb-5 bg-[#e5c3b2] mx-auto">
+
+                <img src="{% static 'images/Teams3.png' %}"
+                     alt="Emily Brown"
+                     class="w-full h-full object-cover">
+
+            </div>
+
+            <h3 class="text-md font-semibold text-gray-900 mb-1">
+                Emily Brown
+            </h3>
+
+            <p class="text-xs text-gray-500 leading-tight">
+                Community Manager
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+    <!-- --- FOOTER SECTION --- -->
+    <footer class="bg-[#c9c9c9] py-10 px-6 text-center">
+        <!-- Links -->
+        <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 mb-6 text-sm text-gray-600">
+            <a href="#" class="hover:text-gray-900 transition-colors">Home</a>
+            <a href="#" class="hover:text-gray-900 transition-colors">Causes</a>
+            <a href="#" class="hover:text-gray-900 transition-colors">About Us</a>
+            <a href="#" class="hover:text-gray-900 transition-colors">Contact</a>
+            <a href="#" class="hover:text-gray-900 transition-colors">Privacy Policy</a>
+            <a href="#" class="hover:text-gray-900 transition-colors">Terms of Service</a>
+        </div>
+        
+        <!-- Social Icons -->
+        <div class="flex justify-center gap-6 mb-6 text-gray-600 text-lg">
+            <a href="#" aria-label="Twitter" class="hover:text-gray-900 transition-colors"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook" class="hover:text-gray-900 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram" class="hover:text-gray-900 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        
+        <!-- Copyright -->
+        <p class="text-xs text-gray-500">&copy; 2024 HopeHands Foundation. All rights reserved.</p>
+    </footer>
+
+    
+
+</body>
+</html>
+
+
+
+
+

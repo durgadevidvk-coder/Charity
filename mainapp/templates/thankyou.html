@@ -1,0 +1,318 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HopeHands Foundation</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <style>
+        body{
+            font-family:'Poppins',sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="bg-[#f7f7f7] text-black">
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto px-5 py-5">
+
+        <!-- Navbar -->
+        <nav class="bg-white rounded-md px-8 py-4 flex items-center justify-between shadow-sm">
+
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+
+                <div class="w-2 h-2 bg-black rounded-full"></div>
+
+                <h1 class="text-[15px] font-medium">
+                    HopeHands Foundation
+                </h1>
+
+            </div>
+
+            <!-- Menu -->
+            <div class="hidden md:flex items-center gap-10 text-[15px] font-medium">
+
+                <a href="{% url 'home' %}" class="hover:text-blue-700 transition">
+                    Home
+                </a>
+
+                <a href="{% url 'about' %}" class="hover:text-blue-700 transition">
+                    About Us
+                </a>
+
+                <a href="{% url 'causes' %}" class="hover:text-blue-700 transition">
+                    Causes
+                </a>
+
+                <a href="{% url 'donate' %}" class="hover:text-blue-700 transition">
+                    Donate
+                </a>
+
+                <a href="{% url 'contact' %}" class="hover:text-blue-700 transition">
+                    Contact
+                </a>
+
+                
+<a href="{% url 'donate' %}" class="bg-blue-900 text-white px-5 py-2.5 rounded text-sm font-semibold hover:bg-blue-800 transition">Donate Now</a>
+        
+            </div>
+
+        </nav>
+
+
+        <!-- Hero Section -->
+        <section class=" mt-5 rounded-md p-6 ">
+
+            <img src="{% static 'images/hero_thank.png' %}"
+                 alt="Children"
+                 class="w-full h-[600px] object-cover rounded-md">
+
+        </section>
+
+
+        <!-- Thank You Section -->
+        <section class="text-center mt-10">
+
+            <h2 class="text-[42px] font-bold">
+                Thank You for Making a Difference ❤️
+            </h2>
+
+            <p class="text-gray-600 text-[15px] mt-4">
+                Your kindness has brought hope, care, and support to those who need it the most.
+            </p>
+
+        </section>
+
+
+        <!-- Impact Section -->
+        <section class="mt-14">
+
+            <h3 class="text-[28px] font-bold">
+                Your Impact
+            </h3>
+
+            <p class="text-gray-600 text-[15px] leading-8 mt-4 max-w-6xl">
+                Your generous donation will directly support our mission to provide
+                essential resources and opportunities to underserved communities.
+                It will help us deliver critical services, empower individuals,
+                and foster sustainable change.
+            </p>
+
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+
+                    <img src="{% static 'images/thank1.png' %}"
+                         alt=""
+                         class="w-full h-60 object-cover">
+
+                    <div class="p-5">
+
+                        <h4 class="font-semibold text-[15px]">
+                            Educated a child for a month
+                        </h4>
+
+                        <p class="text-gray-500 text-[13px] leading-6 mt-2">
+                            Your donation helps provide access to quality education
+                            for one child for an entire month.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+
+                    <img src="{% static 'images/thank2.png' %}"
+                         alt=""
+                         class="w-full h-60 object-cover">
+
+                    <div class="p-5">
+
+                        <h4 class="font-semibold text-[15px]">
+                            Provided meals for families
+                        </h4>
+
+                        <p class="text-gray-500 text-[13px] leading-6 mt-2">
+                            Your donation helps provide nutritious meals to families
+                            in need.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+
+                    <img src="{% static 'images/thank3.png' %}"
+                         alt=""
+                         class="w-full h-60 object-cover">
+
+                    <div class="p-5">
+
+                        <h4 class="font-semibold text-[15px]">
+                            Supported basic healthcare
+                        </h4>
+
+                        <p class="text-gray-500 text-[13px] leading-6 mt-2">
+                            Your support aids in delivering essential healthcare
+                            services to those without access.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+<!-- Support Section -->
+<section class="mt-16">
+
+    <div class="max-w-5xl">
+
+        <!-- Heading -->
+        <h2 class="text-[42px] font-bold leading-tight">
+            Your Support Can Go Even Further
+        </h2>
+
+
+        <!-- Buttons -->
+        <div class="flex  justify-center items-center gap-6 mt-6">
+
+            <button class="bg-[#6d963f] hover:bg-[#5d8234] text-black font-semibold px-10 py-4 rounded-xl">
+                Donate Again
+            </button>
+
+            <button class="text-black font-semibold whitespace-nowrap">
+                Share This Cause
+            </button>
+
+        </div>
+
+
+        <!-- Paragraph -->
+        <p class="text-black text-[20px] leading-[45px] mt-6">
+            Consider making a recurring donation to ensure continuous
+            support for our programs. Share our cause with your friends
+            and family to help us reach more people.
+        </p>
+
+    </div>
+
+</section>
+       
+
+
+
+<!-- Stay Connected -->
+<section class="mt-10 border-t border-gray-300 pt-8">
+
+    <!-- Heading -->
+    <h3 class="text-[40px] font-bold">
+        Stay Connected
+    </h3>
+
+    <!-- Receive Email Button -->
+    <button class="border border-black text-black px-6 py-3 rounded-full mt-5 hover:bg-black hover:text-white transition duration-300">
+        Receive email updates
+    </button>
+
+    <!-- Center Volunteer Button -->
+    <div class="flex justify-center mt-8">
+
+        <button class=" bg-[#6d963f] hover:bg-[#5d8234] text-black font-semibold px-8 py-4 rounded-full transition duration-300">
+            Become a Volunteer
+        </button>
+
+    </div>
+
+</section>
+
+        <!-- Thank You Message -->
+        <section class="text-center mt-10">
+
+            <p class="text-gray-500 text-[18px]">
+                From all of us at Hope Foundation — thank you for believing in humanity.
+            </p>
+
+        </section>
+
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-[#ececec] mt-12 py-16">
+
+        <div class="max-w-7xl mx-auto px-5">
+
+            <!-- Footer Links -->
+            <div class="flex flex-wrap justify-center gap-16 text-[18px] text-gray-700">
+
+                <a href="#" class="hover:text-black transition">
+                    About Us
+                </a>
+
+                <a href="#" class="hover:text-black transition">
+                    Contact
+                </a>
+
+                <a href="#" class="hover:text-black transition">
+                    Privacy Policy
+                </a>
+
+                <a href="#" class="hover:text-black transition">
+                    Terms of Service
+                </a>
+
+            </div>
+
+
+            <!-- Social Icons -->
+            <div class="flex justify-center gap-7 mt-10 text-[24px] text-gray-600">
+
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+
+            </div>
+
+
+            <!-- Copyright -->
+            <div class="text-center mt-10 text-[18px] text-gray-600">
+
+                © 2024 HopeHands Foundation. All rights reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
